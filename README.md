@@ -7,18 +7,23 @@ The script reads the files from path which looks like this: UCI HAR Dataset/test
 Before you run the script, following packages need to be installed:
 
 install.packages("magrittr")
+
 library(magrittr)
+
 install.packages("dplyr")
+
 library(dplyr)
 
 After that the script can be loaded and run:
 
 source("run_analysis.R")
+
 run_analysis()
 
 The script will create a file in your working directory which you can read and open it like this:
 
 data <- read.table("tidyData.txt", header = TRUE)
+
 view(data)
 
 The data is extracted as a subset from following dataset 
