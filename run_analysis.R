@@ -37,7 +37,7 @@ colnames(allData)[2] <- "Subject"
 
 tidyData <- allData %>% group_by(Activity,Subject) %>% summarize_all(mean)
 
-write.table(tidyData,file="tidyData.txt")
+write.table(tidyData,file="tidyData.txt",row.names = FALSE)
   
 tidyData  
 }
