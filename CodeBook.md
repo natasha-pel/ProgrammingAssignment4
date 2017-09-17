@@ -36,8 +36,11 @@ std(): Standard deviation
 Complete set of variables:
 =================
 
-"Activity"
-"Subject" 
+"Activity" -  WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING ,LAYING
+"Subject" - Numeric value assigned to each person
+
+All the other variables are the summarized mean values of the original variables.
+
 "tBodyAcc.mean().X" 
 "tBodyAcc.mean().Y" 
 "tBodyAcc.mean().Z" 
