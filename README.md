@@ -4,7 +4,11 @@ The data is extracted as a subset from following dataset
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 All the mean and std variables were extracted ( all the variables which contain exact mentions of "mean" or "std" in their name with small letters)
-In the original dataset there are training and test observations but in this project they are merged into one file. The file contains one observations per one person for one activity. This means that if there were more observations per (person,ativity) pair they were grouped together and for each variable the average value is shown.
+
+In the original dataset there are training and test observations but in this project they are merged into one file. 
+
+The file contains one observations per one person for one activity. 
+This means that if there were more observations per (person,ativity) pair they were grouped together and for each variable the average value is shown.
 
 License:
 ========
