@@ -1,3 +1,16 @@
+What my script does:
+
+1. It binds the training and test data together 
+2. It goes through all the rows of features.txt file and it loops the merged dataset from the first step in the same time. 
+If the feature name contains "mean" or "std" it substitutes "," and "-" with "." and sets the label as a column name of according column.
+In other case it removes the column from the dataset.
+3. It takes data from "activity_labels" file and changes the numbers in Activity column with descriptive names.
+4. It names the columns "Activity" and "Subject".
+5. In order to have one observation per row, it groups the data per Activitu,Subject pairs and summarizes the rest of the variables by taking the average from the different values.
+6. Then it writes the tidy dataset into your working directory.
+7. Also it returns the tidy data as an output from the script.
+
+
 Before you run this script following zip  needs to  be extracted the into your R directory:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
