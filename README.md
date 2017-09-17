@@ -24,7 +24,9 @@ The script will create a file in your working directory which you can read and o
 
 data <- read.table("tidyData.txt", header = TRUE)
 
-view(data)
+View(data)
+
+As per the principle of tidy data all the columns have descriptive names (only letters numbers and "." characters) and the observations are grouped by subject,activity pairs.
 
 The data is extracted as a subset from following dataset 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
@@ -34,7 +36,7 @@ All the mean and std variables were extracted ( all the variables which contain 
 In the original dataset there are training and test observations but in this project they are merged into one file. 
 
 The file contains one observations per one person for one activity. 
-This means that if there were more observations per (person,ativity) pair they were grouped together and for each variable the average value is shown.
+This means that if there were more observations per (subject,activity) pair they were grouped together and for each variable the average value is shown.
 
 License:
 ========
